@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>SuperHero Hunter App</title>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="logo"><a href="#"><img src="images/superhero-logos.jpg"></a></div>
+        <div class="navdiv"><a href="#">SuperHero Hunter</a>
+        </div>
+        <button class="btn"><a href="#">Favourites</a></button>
+
+    </nav>
+    <div class="background">
+        <img src="images/bgimage.jpg">
+
+    </div>
+    <div class="container"> 
+        <div class="superhero-wrapper">
+            <div class="search">
+                <input class="search-txt" type="text" placeholder=" Search" name="search">
+                <a class="search-btn" href="#">
+                    <i class="fa fa-search" style="font-size: 18px;">
+                    </i>
+                </a>
+
+            </div>
+            <div>
+                <div id="superhero">
+                    <div class="superhero-item">
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="superhero-details">
+                <!-- superhero close btn -->
+                <button type="button" class="superhero-close-btn" id="superhero-close-btn">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+               <!--<div class="superhero-details-content">
+                    <h2 class="superhero-title">SuperHero Name Here</h2>
+                    
+                    <div class="superheros-img">
+                        <img src="images/CaptainAmerica.jpg" alt="">
+                    </div>
+                    <div class="superhero-instruct">
+                        <h3>Instructions:</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium
+                            natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa,
+                            soluta suscipit quam eos velit autem iste!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad
+                            obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium
+                                natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa,
+                                soluta suscipit quam eos velit autem iste!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad
+                                obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium
+                                    natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa,
+                                    soluta suscipit quam eos velit autem iste!</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad
+                                    obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <script src="api-data.js"></script>
+    <script src="script1.js"></script>
+</body>
+
+</html>
