@@ -188,6 +188,7 @@ nav{
     width: 90%;
     height: 90%;
     overflow-y: scroll;
+    display: none;
     padding: 2rem 0;
 }
 .superhero-details::-webkit-scrollbar{
@@ -251,6 +252,14 @@ nav{
     -o-border-radius: 50%;
     margin: 0 auto;
     display: block;
+}
+
+.notFound{
+    grid-template-columns: 1fr!important;
+    color: #2f3640;
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
 }
 @media screen and (min-width: 768px){
     #superhero{
