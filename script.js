@@ -34,7 +34,7 @@ function getSuperHeroList()
         </div>
         <div class="superhero-name">
         <a href="#" class="superhero-info">
-            <h3>${element.name}</h3>
+           ${element.name}
             </a>
             <a href="#" class="superhero-btn">Add To Favourites</a>
         </div>
@@ -64,7 +64,7 @@ superHeroList.addEventListener('click', getSuperHeroInfo);
 function getSuperHeroInfo(e)
 {
   e.preventDefault();
-  if (e.target.classList.contains('superhero-btn'))
+  if (e.target.classList.contains('superhero-info'))
   {
     let superHeroItem = e.target.parentElement.parentElement;
     console.log(superHeroItem);
