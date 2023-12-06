@@ -70,12 +70,22 @@ function getSuperHeroInfo(e)
     console.log(superHeroItem);
     fetch(`http://gateway.marvel.com/v1/public/characters?ts=1&apikey=94990c30eeadfb944e8ce703f46fb9df&hash=84942db7f1df9d6abda2409a1c16dcf5&id=${superHeroItem.dataset.id}`)
     .then(response => response.json())
-    .then(data => {
-      console.log(data);
-    })
-
-
+    .then(data => superHeroModal(data.data.results));
   }
+}
+function superHeroModal(element){
+  console.log(element);
+  element = element[0];
+  let html=`<h2 class="superhero-title">${element.name}</h2>
+
+  <div class="superheros-img">
+  <img src="${element.thumbnail["path"] + "." + element.thumbnail["extension"]}" alt="superhero"/>
+  </div>
+  <div class="superhero-instruct">
+      <p>${element.description}</p>
+  </div>`;
+  superHeroDetailsContent.innerHTML = html;
+  superHeroDetailsContent.parentElement.classList.add('showSuperHero');
 }
 /*
 superHeroList.addEventListener('DOMContentLoaded', function(){
